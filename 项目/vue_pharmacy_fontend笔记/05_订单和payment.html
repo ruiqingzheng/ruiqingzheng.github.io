@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>订单和payment | 工作笔记</title>
+    <meta name="description" content="Hendry的博客">
+    <link rel="icon" href="/img/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.eecf6a6a.css" as="style"><link rel="preload" href="/assets/js/app.f8bee57c.js" as="script"><link rel="preload" href="/assets/js/61.0a1b1f3b.js" as="script"><link rel="prefetch" href="/assets/js/10.837bbfd0.js"><link rel="prefetch" href="/assets/js/11.bbd08110.js"><link rel="prefetch" href="/assets/js/12.eb514b46.js"><link rel="prefetch" href="/assets/js/13.e2503408.js"><link rel="prefetch" href="/assets/js/14.d97c0ac2.js"><link rel="prefetch" href="/assets/js/15.baf7986f.js"><link rel="prefetch" href="/assets/js/16.2b12bf6f.js"><link rel="prefetch" href="/assets/js/17.f7e545ac.js"><link rel="prefetch" href="/assets/js/18.70d9230d.js"><link rel="prefetch" href="/assets/js/19.0a61e7ba.js"><link rel="prefetch" href="/assets/js/2.d139c70a.js"><link rel="prefetch" href="/assets/js/20.87141f48.js"><link rel="prefetch" href="/assets/js/21.536e6d3b.js"><link rel="prefetch" href="/assets/js/22.fa3e648a.js"><link rel="prefetch" href="/assets/js/23.f6c367b9.js"><link rel="prefetch" href="/assets/js/24.a8f770f5.js"><link rel="prefetch" href="/assets/js/25.3bb8bbfc.js"><link rel="prefetch" href="/assets/js/26.1c16cfb8.js"><link rel="prefetch" href="/assets/js/27.075df559.js"><link rel="prefetch" href="/assets/js/28.90c1e366.js"><link rel="prefetch" href="/assets/js/29.3145e78e.js"><link rel="prefetch" href="/assets/js/3.de89ea98.js"><link rel="prefetch" href="/assets/js/30.9832e5bd.js"><link rel="prefetch" href="/assets/js/31.2f9a7c5b.js"><link rel="prefetch" href="/assets/js/32.df9181b5.js"><link rel="prefetch" href="/assets/js/33.ec53f96d.js"><link rel="prefetch" href="/assets/js/34.398a7128.js"><link rel="prefetch" href="/assets/js/35.bb1c5a48.js"><link rel="prefetch" href="/assets/js/36.935a5449.js"><link rel="prefetch" href="/assets/js/37.459fef35.js"><link rel="prefetch" href="/assets/js/38.f51023c1.js"><link rel="prefetch" href="/assets/js/39.ed9f7023.js"><link rel="prefetch" href="/assets/js/4.a889cc83.js"><link rel="prefetch" href="/assets/js/40.7959ecc5.js"><link rel="prefetch" href="/assets/js/41.2f350c5b.js"><link rel="prefetch" href="/assets/js/42.3a09f5a5.js"><link rel="prefetch" href="/assets/js/43.b22e3395.js"><link rel="prefetch" href="/assets/js/44.ea91f873.js"><link rel="prefetch" href="/assets/js/45.29363c9f.js"><link rel="prefetch" href="/assets/js/46.45848afe.js"><link rel="prefetch" href="/assets/js/47.309f8db5.js"><link rel="prefetch" href="/assets/js/48.4da217ee.js"><link rel="prefetch" href="/assets/js/49.713e67fd.js"><link rel="prefetch" href="/assets/js/5.7183a5fb.js"><link rel="prefetch" href="/assets/js/50.d90574c6.js"><link rel="prefetch" href="/assets/js/51.5190cc6c.js"><link rel="prefetch" href="/assets/js/52.25c37497.js"><link rel="prefetch" href="/assets/js/53.3fea90a3.js"><link rel="prefetch" href="/assets/js/54.d23ad054.js"><link rel="prefetch" href="/assets/js/55.d8ba3a31.js"><link rel="prefetch" href="/assets/js/56.bc578093.js"><link rel="prefetch" href="/assets/js/57.cb8c611e.js"><link rel="prefetch" href="/assets/js/58.4a6efece.js"><link rel="prefetch" href="/assets/js/59.397f12f2.js"><link rel="prefetch" href="/assets/js/6.6621a9ba.js"><link rel="prefetch" href="/assets/js/60.a209bb60.js"><link rel="prefetch" href="/assets/js/62.a79409e9.js"><link rel="prefetch" href="/assets/js/63.f99fda12.js"><link rel="prefetch" href="/assets/js/64.59a96a9c.js"><link rel="prefetch" href="/assets/js/65.ab4be186.js"><link rel="prefetch" href="/assets/js/66.df4455cd.js"><link rel="prefetch" href="/assets/js/7.a024304b.js"><link rel="prefetch" href="/assets/js/8.be16c405.js"><link rel="prefetch" href="/assets/js/9.37e77487.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.eecf6a6a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">工作笔记</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/menu.html" class="nav-link">首页</a></div><div class="nav-item"><a href="/Android/" class="nav-link">Android</a></div><div class="nav-item"><a href="/直播/" class="nav-link">直播</a></div><div class="nav-item"><a href="/前端/" class="nav-link">前端</a></div><div class="nav-item"><a href="/公众号/" class="nav-link">公众号</a></div><div class="nav-item"><a href="/项目/" class="nav-link">项目</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>算法</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/language/chinese.html" class="nav-link">冒泡</a></li><li class="dropdown-subitem"><a href="/language/japanese.html" class="nav-link">快速</a></li></ul></li><li class="dropdown-item"><h4>设计模式</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/language/chinese.html" class="nav-link">工厂</a></li><li class="dropdown-subitem"><a href="/language/chinese.html" class="nav-link">单例</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/menu.html" class="nav-link">首页</a></div><div class="nav-item"><a href="/Android/" class="nav-link">Android</a></div><div class="nav-item"><a href="/直播/" class="nav-link">直播</a></div><div class="nav-item"><a href="/前端/" class="nav-link">前端</a></div><div class="nav-item"><a href="/公众号/" class="nav-link">公众号</a></div><div class="nav-item"><a href="/项目/" class="nav-link">项目</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>算法</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/language/chinese.html" class="nav-link">冒泡</a></li><li class="dropdown-subitem"><a href="/language/japanese.html" class="nav-link">快速</a></li></ul></li><li class="dropdown-item"><h4>设计模式</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/language/chinese.html" class="nav-link">工厂</a></li><li class="dropdown-subitem"><a href="/language/chinese.html" class="nav-link">单例</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>订单和payment</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/%E9%A1%B9%E7%9B%AE/vue_pharmacy_fontend%E7%AC%94%E8%AE%B0/05_%E8%AE%A2%E5%8D%95%E5%92%8Cpayment.html#修复购物车总价-显示长串小数问题" class="sidebar-link">修复购物车总价, 显示长串小数问题</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/%E9%A1%B9%E7%9B%AE/vue_pharmacy_fontend%E7%AC%94%E8%AE%B0/05_%E8%AE%A2%E5%8D%95%E5%92%8Cpayment.html#结账页面" class="sidebar-link">结账页面</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/%E9%A1%B9%E7%9B%AE/vue_pharmacy_fontend%E7%AC%94%E8%AE%B0/05_%E8%AE%A2%E5%8D%95%E5%92%8Cpayment.html#tips" class="sidebar-link">TIPs</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/%E9%A1%B9%E7%9B%AE/vue_pharmacy_fontend%E7%AC%94%E8%AE%B0/05_%E8%AE%A2%E5%8D%95%E5%92%8Cpayment.html#小数精度问题" class="sidebar-link">小数精度问题</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/%E9%A1%B9%E7%9B%AE/vue_pharmacy_fontend%E7%AC%94%E8%AE%B0/05_%E8%AE%A2%E5%8D%95%E5%92%8Cpayment.html#地址组件" class="sidebar-link">地址组件</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/%E9%A1%B9%E7%9B%AE/vue_pharmacy_fontend%E7%AC%94%E8%AE%B0/05_%E8%AE%A2%E5%8D%95%E5%92%8Cpayment.html#select-组件使用的问题" class="sidebar-link">select 组件使用的问题</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="订单和payment"><a href="#订单和payment" aria-hidden="true" class="header-anchor">#</a> 订单和payment</h1> <ol><li><p>分析原来的AAA站点</p></li> <li><p>github demo , 关键字 vue payment
+<code>https://github.com/search?utf8=%E2%9C%93&amp;q=vue+payment&amp;type=</code></p></li></ol> <h2 id="修复购物车总价-显示长串小数问题"><a href="#修复购物车总价-显示长串小数问题" aria-hidden="true" class="header-anchor">#</a> 修复购物车总价, 显示长串小数问题</h2> <p>根本原因是因为计算机精度问题 ,  最终的解决方式是 , 把<code>产品价格 * 100</code>  得到整数   ,    结果一定是整数,    然后把<code>结果 /100</code></p> <p>或者理解为先以分为单位整数计算,   最后把分 / 100 得到,  小数点后保留两位的金额</p> <p>另外就是还要防止 , 原始金额如果是 小数点后3位的话, 还是可能得到小数, 所以 value.toFixed(2)</p> <h2 id="结账页面"><a href="#结账页面" aria-hidden="true" class="header-anchor">#</a> 结账页面</h2> <ol><li>先按AAA站点定义地址需要的数据</li></ol> <p>Billing address</p> <p>shipping address</p> <p>// Billing address , 下面这些字段都是必须  <code>Note: Fields marked with &lt;em&gt;&amp;#8226;&lt;/em&gt; are required.</code></p> <div class="language-s extra-class"><pre class="language-text"><code>
+&lt;label for=&quot;firstName&quot;&gt;Full name&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot;  name=&quot;&lt;?=$_SESSION['cgpkmap']['bill_name']?&gt;&quot; value=&quot;&lt;?=$$_SESSION['cgpkmap']['bill_name']?&gt;&quot; onblur=&quot;on_bill_name(this)&quot; &gt;
+&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+&lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot;  name=&quot;&lt;?=$_SESSION['cgpkmap']['bill_email']?&gt;&quot; value=&quot;&lt;?=$$_SESSION['cgpkmap']['bill_email']?&gt;&quot; &gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+&lt;label for=&quot;street&quot;&gt;Street address&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot;  name=&quot;bill_street&quot; value=&quot;&lt;?=$bill_street?&gt;&quot; &gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+&lt;label for=&quot;city&quot;&gt;City&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot; name=&quot;bill_city&quot; value=&quot;&lt;?=$bill_city?&gt;&quot; &gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+&lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
+&lt;select name=&quot;bill_state&quot; onchange=&quot;on_bill_state(this)&quot;&gt;
+&lt;option value=&quot;&quot;&gt;&lt;/option&gt;
+&lt;/select&gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+
+&lt;label for=&quot;bill_zip&quot;&gt;Zip code / Post code&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot;  name=&quot;bill_zip&quot; value=&quot;&lt;?=$bill_zip?&gt;&quot;  onblur=&quot;on_bill_zip(this)&quot;&gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+
+&lt;label for=&quot;country&quot;&gt;Country&lt;/label&gt;
+&lt;select name=&quot;bill_country&quot; &lt;?if(!no_echeck_meds()){?&gt; onChange='getBillCountry(this.value); return false'&lt;?}?&gt;&gt;
+&lt;option&gt;
+&lt;/select&gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+
+&lt;label for=&quot;firstName&quot;&gt;Telephone&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot;  name=&quot;bill_phone&quot; value=&quot;&lt;?=$bill_phone?&gt;&quot; onblur=&quot;on_bill_phone(this)&quot; maxlength=&quot;14&quot;&gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+</code></pre></div><p>// Shipping Address</p> <div class="language-s extra-class"><pre class="language-text"><code>
+&lt;label for=&quot;firstName&quot;&gt;Full name&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot;  name=&quot;ship_name&quot; value=&quot;&lt;?=$ship_name?&gt;&quot; &gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+
+&lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot; name=&quot;ship_email&quot; value=&quot;&lt;?=$ship_email?&gt;&quot; &gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+
+&lt;label for=&quot;street&quot;&gt;Street address&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot;  name=&quot;ship_street&quot; value=&quot;&lt;?=$ship_street?&gt;&quot; &gt;&lt;!-- &lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+
+&lt;label for=&quot;city&quot;&gt;City&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot;  name=&quot;ship_city&quot; value=&quot;&lt;?=$ship_city?&gt;&quot; &gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+
+&lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
+&lt;select name=&quot;ship_state&quot;&gt;
+&lt;option value=&quot;&quot;&gt;&lt;/option&gt;
+&lt;/select&gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+
+
+&lt;label for=&quot;firstName&quot;&gt;Zip code / Post code&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot;  name=&quot;ship_zip&quot; value=&quot;&lt;?=$ship_zip?&gt;&quot; &gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+
+&lt;label for=&quot;country&quot;&gt;Country&lt;/label&gt;
+&lt;td&gt;&lt;select name=&quot;ship_country&quot;  &gt;
+&lt;/select&gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+
+
+&lt;label for=&quot;firstName&quot;&gt;Telephone&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input_text&quot;  name=&quot;ship_phone&quot; value=&quot;&lt;?=$ship_phone?&gt;&quot; maxlength=&quot;14&quot;&gt;&lt;em&gt; &amp;#8226;&lt;/em&gt;
+</code></pre></div><p>可见地址都是8个字段, 所以 Shipping Address 和 billing Address 可以都用同样的数据类型</p> <h2 id="tips"><a href="#tips" aria-hidden="true" class="header-anchor">#</a> TIPs</h2> <h2 id="小数精度问题"><a href="#小数精度问题" aria-hidden="true" class="header-anchor">#</a> 小数精度问题</h2> <p>js的小数精度问题, 是因为计算机的处理数字只能是二进制 , 而二进制在表示小数的时候, 就有精度丢失</p> <p>http://elevenbeans.github.io/2017/07/07/floating-point-issue/</p> <p>小数的二进制表示  <code>https://zhidao.baidu.com/question/59020505.html</code></p> <p>如: 0.625 用二进制表示</p> <ol><li>取小数部分 0.625 * 2 得到 1.25  --------   取整数部分1  , 小数点后 第1位: 1</li> <li>去1.25的小数部分   0.25 * 2 = 0.50   -------- 取整数部分0 , 小数点后第2位: 0</li> <li>0.50 取小数部分    0.50 * 2 = 1.00  ---------- 取整数部分1, 取1  , 且小数点后面为 0 , 换算结束.  于是精度没有丢失</li></ol> <p>结果为  0.101    验算:  1/2 + 1/8 = 0.625 精度没有丢失</p> <p>但 十进制小数 0.1 , 转为二进制表示的时候</p> <p>结果是: 0.00011   ,    这个结果转换为十进制 = 1/16 + 1/32 = 0.09375</p> <p>精度再大点,  结果是循环小数 0.0001100110011 , 后面的0011 一直循环 ,</p> <p>转为十进制 1/16 + 1/32 + 1/256 + 1/512 + 1/4096 + 1/8192 = 0.0999755859375</p> <p>就是说始终都是和<code>0.1</code>有误差的  那么怎么解决呢</p> <p>0.1+0.4 的结果是 0.5 ，没有问题，是不是啪啪啪打脸了？怎么解释？
+这种情况，首先 0.5 本身是可以精确地表示为二进制浮点数的 0.1；其次输入的两个数字中的舍入误差可能相互抵消，但不一定会抵消。</p> <p>如果你真的需要在你的代码中做浮点数的四则运算或者大小判断，特别是当你处理钱时，可以使用一个特殊的 decimal type 如 BigDecimal。
+如果您不想看到所有这些额外的小数位数：在显示时，也可以用toFixed()或toPrecision() 之类将结果格式化为固定的小数位数。</p> <h2 id="地址组件"><a href="#地址组件" aria-hidden="true" class="header-anchor">#</a> 地址组件</h2> <p>国家信息的接口</p> <p>测试接口地址</p> <p><code>http://pharmacy-backend.lindoit.com:8082/test-data/state-country</code></p> <p>JSONP</p> <p><code>http://pharmacy-backend.lindoit.com:8082/test-data/api-state-country</code></p> <p>用户地址表单组件里面比较麻烦的一个是 select的国家信息数据来源 , 还有一个是用户提交的信息的保存</p> <p>现在是把国家和州信息通过接口访问获取 , 如果这部分数据没有什么变化的话, 可以静态化 , 免得放在store里面远程获取毕竟没有静态化稳定</p> <p>用户提交的信息的保存依然用的是localstorage ,</p> <p><code>src/store/country_state</code>      ---  国家, 州的信息获取
+<code>src/store/order_address</code>      ---  订单地址信息数据的获取, 设置和保存
+<code>components/checkout_address</code>   --- 地址信息表单</p> <p>且需要注意的是 billing_address 和shipping address  是可以结合在一起的</p> <p>这里主要是使用element form ,    数据, 依然是使用store, 最后把用户提交的表单保存在localStorage中 类似cart 保存</p> <h2 id="select-组件使用的问题"><a href="#select-组件使用的问题" aria-hidden="true" class="header-anchor">#</a> select 组件使用的问题</h2> <p>element 的select 组件, 在我们使用中有显示上的问题</p> <p>当表单提交的时候, 通过调试工具, 可以看到<code>select</code>是可以取到值的, 提交的数据也是正常的,  但是select 本身却不显示选择的选项 ,  而是显示的为空</p> <p>后来调试很久发现是数据定义的问题 ,</p> <p>当数据定义在<code>computed</code>像下面这样的话,  select就不正常 , 如果 在<code>data</code>里面直接返回就是正常的 <code>billing_address : createAddress(),</code></p> <div class="language-js extra-class"><pre class="language-js"><code>      <span class="token function">billing_address</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">createAddress</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>到后来, 我们把数据和localStorage结合起来, 通过getter映射过来, 也是在computed里面, 却也是正常的, 原因没有找到, 但总归有点问题, 记录一下</p> <div class="language-js extra-class"><pre class="language-js"><code>      <span class="token operator">...</span><span class="token function">mapGetters</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token string">&quot;address_countries_states&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;addressCountriesStates_getter&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;countryStateLoaded&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;countryStateLoaded_getter&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;billing_address&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;billingAddress_getter&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.f8bee57c.js" defer></script><script src="/assets/js/61.0a1b1f3b.js" defer></script>
+  </body>
+</html>
